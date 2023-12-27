@@ -116,3 +116,7 @@ Next-14 need to validate the cache to detect any changes coming from the CMS fir
 Add the constant to each page where you fetch data
 
     export const revalidate = 30 // revalidate at most every 30 seconds
+
+## Deployed app  
+
+Checkout [NextBlog](https://next-blog-two-mu.vercel.app/)
