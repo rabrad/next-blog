@@ -42,7 +42,7 @@ export default async function BlogSlug({
           {data.title}
         </h1>
         <p className="text-sm text-muted-foreground tracking-tight pt-2">
-          Presented to your by NextBlog & ChatGPT
+          Presented to you by NextBlog & ChatGPT
         </p>
       </div>
       <div className="max-w-3xl prose prose-slate dark:prose-invert  prose-code:bg-secondary prose-code:p-2 prose-code:rounded-sm">
