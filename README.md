@@ -100,3 +100,7 @@ Note: to render the post content, use **@portabletext/react** package as recomme
 
 To Style the post content properly, we have to use tailwind plugin which is created for "Beautiful typographic defaults for HTML you don't control." it is
 **@tailwindcss/typography**, add it to Tailwind.config and [use it according to their docs](https://tailwindcss.com/docs/typography-plugin)
+
+## Deployment to Vercel
+
+Make sure you add `sanity` to `.vercelignore`. It is not needed by Vercel and it will throw error if it is included in the deployment.
