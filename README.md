@@ -104,3 +104,15 @@ To Style the post content properly, we have to use tailwind plugin which is crea
 ## Deployment to Vercel
 
 Make sure you add `sanity` to `.vercelignore`. It is not needed by Vercel and it will throw error if it is included in the deployment.
+
+## Deployment to Sanity
+
+- cd to sanity directory and `npm run deploy`
+- Give your project a name and Sanity will provide you with a URL to access to your CMS online.
+
+Now both Vercel & Sanity are deployed, but there is no way that Next-14 will know about any new content without fixing the cache issue.
+Next-14 need to validate the cache to detect any changes coming from the CMS first. See [Time-based Revalidation](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#time-based-revalidation)
+
+Add the constant to each page where you fetch data
+
+    export const revalidate = 30 // revalidate at most every 30 seconds

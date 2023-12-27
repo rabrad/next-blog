@@ -3,6 +3,8 @@ import { SanityClient } from "./lib/sanity"
 
 import BlogCard from "./components/PostCard"
 
+export const revalidate = 30 // revalidate at most every 30 seconds
+
 async function getData() {
   const query = `
   *[_type == 'blog']| order(releaseDate desc) {
